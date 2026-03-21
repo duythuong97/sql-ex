@@ -1,0 +1,46 @@
+{
+    "name": "sql-insert-visualizer",
+    "displayName": "SQL Insert Visualizer",
+    "description": "Visualize column-value mapping in SQL INSERT statements.",
+    "version": "0.0.1",
+    "publisher": "antigravity",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:sql",
+        "onLanguage:xml"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "SQL Insert Visualizer",
+            "properties": {
+                "sqlInsertVisualizer.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/disable SQL Insert Visualizer."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.74.0",
+        "@types/node": "^16.11.7",
+        "typescript": "^4.9.4",
+        "eslint": "^8.28.0",
+        "@typescript-eslint/parser": "^5.44.0",
+        "@typescript-eslint/eslint-plugin": "^5.44.0"
+    }
+}

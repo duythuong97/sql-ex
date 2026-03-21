@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+
+# Build
+out/
+dist/
+*.vsix
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+.vscode-test/
+.history/
+*.log
+
+# Misc
+.env
+.DS_Store
