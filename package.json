@@ -2,7 +2,7 @@
     "name": "sql-insert-visualizer",
     "displayName": "SQL Insert Visualizer",
     "description": "Visualize column-value mapping in SQL INSERT statements.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "antigravity",
     "engines": {
         "vscode": "^1.74.0"
